@@ -22,7 +22,7 @@ for iter = 1:NN
 
     %%%%% step2: 추정
     X = [X1, X2, X3];
-    [beta_hat, t_value] = OLS_inha(Y, X);
+    [beta_hat, t_value] = OLS(Y, X);
 
     Beta_hatm(iter, :) = beta_hat';
 
